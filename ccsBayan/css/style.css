@@ -3,7 +3,8 @@
 }
 
 body {
-    background-color: rgba(168, 168, 168, 0.61);
+    background-color: rgba(95, 91, 95, 0.712);
+    color: rgba(240, 248, 255, 0.856);
 }
 
 .container {
@@ -27,8 +28,8 @@ h1 {
 
 .tab {
     margin-top: 20px;
-    border-radius: 5px;
-
+    border-radius: 6px;
+    background-color: rgba(114, 112, 112, 0.801);
 }
 
 .accord-input {
@@ -46,7 +47,6 @@ h1 {
     cursor: pointer;
     padding: 10px 15px;
     height: 100%;
-    background-color: rgba(74, 112, 112, 0.801);
 }
 
 .tab-title {
@@ -54,6 +54,7 @@ h1 {
 }
 
 .tab-open {
+    position: static;
     max-height: 0;
     overflow: hidden;
     transition: max-height .6s;
@@ -62,18 +63,13 @@ h1 {
 .tab-img {
     display: block;
     margin: 20px auto;
-    height: 30vh;
-}
-
-.tab-main:hover {
-    background-color: rgba(35, 56, 56, 0.801);
-    transition: background-color 0.2s ease-out;
+    height: 25vh;
 }
 
 .tab-main:hover ~ .tab-open {
     max-height: 30vh;
     overflow: hidden;
-    transition: max-height .6s;
+    transition: max-height 0,6s;
 }
 
 .tab-main:hover .arrow  {
@@ -81,21 +77,35 @@ h1 {
     transition: transform .2s ease-out;
 }
 
-.tab-open:hover {
-    max-height: 30vh;
+
+/* .tab-open:hover {
+    max-height: 40vh;
     overflow: hidden;
     transition: max-height .6s;
-}
+} */
 
 .accord-input:checked ~ .tab-open {
-    max-height: 30vh;
+    max-height: 35vh;
     overflow: hidden;
-    transition: max-height .6s;
+    transition: max-height .6s ease-out;
 }
 
 .accord-input:checked + .tab-main {
-    background-color: rgba(35, 56, 56, 0.801);
-    transition: background-color 0.2s ease-out;
+    background-color: rgba(32, 32, 32, 0.801);
+    transition: background-color 0.3s ease-out;
+    border-radius: 6px 6px 0 0;
+}
+
+.tab:hover > .tab-main {
+    background-color: rgba(32, 32, 32, 0.801);
+    transition: background-color 0.3s ease-out;
+    border-radius: 6px 6px 0 0;
+}
+
+.tab:hover > .tab-open {
+    max-height: 40vh;
+    overflow: hidden;
+    transition: max-height .6s ease-out;
 }
 
 .accord-input:checked + .tab-main  .arrow {
