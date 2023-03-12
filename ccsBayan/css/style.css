@@ -163,6 +163,14 @@ h1 {
         border-radius: 0 0 .5em .5em;
     }
 
+    .tab:active  {
+        opacity: 0.95;
+    }
+
+    .tab-img:active {
+        background-color: black;
+    }
+
     .tab:hover > .tab-open {
         max-height: 40vh;
         overflow: hidden;
