@@ -150,40 +150,6 @@ h1 {
         margin: .5vh auto;
     }
 
-    .tab:active  {
-        opacity: 0.8;
-    }
-
-    .tab-img:active {
-        background-color: black;
-    }
-
-    .tab, .tab-main {
-        cursor: pointer;
-    }
-}
-
-@media (hover: hover) {
-    .accord:hover  .arrow {
-        opacity: 1;
-        transition: all .3s ease-out;
-    }
-
-    .tab:hover > .tab-open {
-        max-height: 40vh;
-        overflow: hidden;
-        transition: all 1s ease-out;
-    }
-
-    .tab:hover  .tab-img {
-        transform: scale(1.0);
-        transition: all 1.2s;
-    }
-
-    .tab-main:hover .arrow  {
-        transform: rotate(90deg);
-    }
-
     .tab:hover > .tab-main > .tab-main-title {
         background-color: rgba(32, 32, 32, 0.801);
         transition: all .5s ease-out;
@@ -203,6 +169,37 @@ h1 {
         border-radius: 0 0 .5em .5em;
     }
 
+    .tab:active  {
+        opacity: 0.8;
+    }
+
+    .tab-img:active {
+        background-color: black;
+    }
+
+    .tab:hover > .tab-open {
+        max-height: 40vh;
+        overflow: hidden;
+        transition: all 1s ease-out;
+    }
+
+    .tab:hover  .tab-img {
+        transform: scale(1.0);
+        transition: all 1.2s;
+    }
+
+    .tab-main:hover .arrow  {
+        transform: rotate(90deg);
+    }
+
+    .tab, .tab-main {
+        cursor: pointer;
+    }
+
+    .accord:hover  .arrow {
+        opacity: 1;
+        transition: all .3s ease-out;
+    }
 }
 
 
