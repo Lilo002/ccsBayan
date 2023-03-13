@@ -150,23 +150,35 @@ h1 {
         margin: .5vh auto;
     }
 
-    .tab:hover > .tab-main > .tab-main-title {
+    .accord:hover .tab-main > .tab-main-title {
         background-color: rgba(32, 32, 32, 0.801);
-        transition: all .5s ease-out;
-        border-radius: .5em .5em 0 0;
     }
 
-    .tab:hover .tab-title {
+    .accord:hover .tab-main > .tab-main-title .tab-title {
         color: rgb(255, 255, 255);
-        transition: color .4s ease-out;
     }
 
     .tab:hover > .tab-main .tab-open {
         max-height: 70vh;
         overflow: hidden;
         background-color: rgb(90 90 90 / 53%);
-        transition: all 1s ease-out;
+        transition: all 1.5s ease-out;
         border-radius: 0 0 .5em .5em;
+    }
+
+    .tab:hover .tab-main-title{
+        border-radius: 0.5em 0.5em 0 0;
+    }
+
+    .tab:active .tab-main > .tab-main-title {
+        background-color: rgb(90 90 90 / 53%);
+        border-radius: .5em .5em 0 0;
+        color: rgb(0, 0, 0);
+        transition: all .5s ease-out;
+    }
+
+    .tab:active .tab-main > .tab-main-title .tab-title {
+        color: rgb(255, 255, 255);
     }
 
     .tab:active  {
